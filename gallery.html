@@ -3,41 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Kingston House Impressions</title>
+    <title>Lunch Specials - Kingston House Impressions</title>
 
     <style>
-        body { margin: 0; font-family: Arial; background: #f7f7f7; }
-        header, footer { background: #2b2b2b; color: white; text-align: center; padding: 20px; }
-        nav { background: #444; padding: 12px; text-align: center; }
-        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: 600; }
-        nav a:hover { color: #ffcc33; }
-        .gallery { max-width: 900px; margin: 40px auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
-        .gallery img { width: 100%; border-radius: 10px; }
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: #faf7f2;
+            color: #333;
+        }
+
+        header {
+            background: #3a3a3a;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            background: #5a5a5a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #e6c27a;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #5a4a2e;
+            border-bottom: 2px solid #d4a74e;
+            padding-bottom: 5px;
+        }
+
+        .special-box {
+            background: #fff3d6;
+            padding: 20px;
+            border-left: 5px solid #d4a74e;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+
+        .special-box strong {
+            font-size: 20px;
+            color: #5a4a2e;
+        }
+
+        footer {
+            background: #3a3a3a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Gallery</h1>
+    <h1>Lunch Specials</h1>
+    <p>Available Sunday Lunch Only</p>
 </header>
 
 <nav>
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
     <a href="bookings.html">Bookings</a>
-    <a href="gallery.html">Gallery</a>
+    <a href="gallery.html">Lunch Specials</a>
     <a href="contact.html">Contact</a>
 </nav>
 
-<div class="gallery">
-    <img src="https://source.unsplash.com/400x300/?restaurant" alt="">
-    <img src="https://source.unsplash.com/400x300/?dining" alt="">
-    <img src="https://source.unsplash.com/400x300/?food" alt="">
+<div class="content">
+
+    <h2 class="section-title">This Week’s Specials</h2>
+
+    <div class="special-box">
+        <strong>Roast of the Day</strong><br>
+        Served with seasonal vegetables, gravy, and Yorkshire pudding.
+    </div>
+
+    <div class="special-box">
+        <strong>Grilled Barramundi</strong><br>
+        Fresh fillet with lemon butter sauce and garden salad.
+    </div>
+
+    <div class="special-box">
+        <strong>Chicken & Mushroom Risotto</strong><br>
+        Creamy Arborio rice with parmesan and fresh herbs.
+    </div>
+
+    <div class="special-box">
+        <strong>Vegetarian Quiche</strong><br>
+        House-made quiche served with chips and salad.
+    </div>
+
+    <div class="special-box">
+        <strong>Chef’s Dessert Special</strong><br>
+        Ask our staff for today’s freshly prepared dessert.
+    </div>
+
 </div>
 
 <footer>
-    © 2026 Kingston House Impressions
+    <p>© 2026 Kingston House Impressions</p>
 </footer>
 
 </body>
