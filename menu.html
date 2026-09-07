@@ -6,13 +6,79 @@
     <title>Menu - Kingston House Impressions</title>
 
     <style>
-        body { margin: 0; font-family: Arial; background: #f7f7f7; }
-        header, footer { background: #2b2b2b; color: white; text-align: center; padding: 20px; }
-        nav { background: #444; padding: 12px; text-align: center; }
-        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: 600; }
-        nav a:hover { color: #ffcc33; }
-        .content { max-width: 900px; margin: 40px auto; background: white; padding: 25px; border-radius: 10px; }
-        .item { padding: 10px; border-left: 4px solid #ffcc33; background: #fff8e1; margin-bottom: 15px; }
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: #faf7f2;
+            color: #333;
+        }
+
+        header {
+            background: #3a3a3a;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            background: #5a5a5a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #e6c27a;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #5a4a2e;
+            border-bottom: 2px solid #d4a74e;
+            padding-bottom: 5px;
+        }
+
+        .menu-group {
+            margin-bottom: 40px;
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #fff3d6;
+            border-left: 5px solid #d4a74e;
+            border-radius: 6px;
+        }
+
+        .menu-item strong {
+            font-size: 18px;
+            color: #5a4a2e;
+        }
+
+        footer {
+            background: #3a3a3a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
     </style>
 </head>
 
@@ -20,6 +86,7 @@
 
 <header>
     <h1>Our Menu</h1>
+    <p>Fresh • Local • Handcrafted</p>
 </header>
 
 <nav>
@@ -31,15 +98,68 @@
 </nav>
 
 <div class="content">
-    <h2>Featured Dishes</h2>
 
-    <div class="item"><strong>Signature Steak</strong> — Premium cut with garlic butter.</div>
-    <div class="item"><strong>Seafood Platter</strong> — Fresh prawns, oysters, calamari.</div>
-    <div class="item"><strong>House Dessert Trio</strong> — Chef’s favourite sweets.</div>
+    <div class="menu-group">
+        <h2 class="section-title">Entrées</h2>
+
+        <div class="menu-item">
+            <strong>Garlic & Herb Bread</strong><br>
+            Freshly baked loaf with whipped herb butter.
+        </div>
+
+        <div class="menu-item">
+            <strong>Salt & Pepper Calamari</strong><br>
+            Lightly seasoned, served with citrus aioli.
+        </div>
+
+        <div class="menu-item">
+            <strong>Bruschetta</strong><br>
+            Tomato, basil, balsamic glaze on toasted sourdough.
+        </div>
+    </div>
+
+    <div class="menu-group">
+        <h2 class="section-title">Mains</h2>
+
+        <div class="menu-item">
+            <strong>Signature Steak</strong><br>
+            Premium cut cooked to your liking, served with garlic butter and seasonal vegetables.
+        </div>
+
+        <div class="menu-item">
+            <strong>Seafood Platter</strong><br>
+            A selection of prawns, oysters, calamari, and grilled fish.
+        </div>
+
+        <div class="menu-item">
+            <strong>Chicken Supreme</strong><br>
+            Herb‑marinated chicken breast with creamy mash and greens.
+        </div>
+    </div>
+
+    <div class="menu-group">
+        <h2 class="section-title">Desserts</h2>
+
+        <div class="menu-item">
+            <strong>House Dessert Trio</strong><br>
+            A tasting plate of our chef’s favourite sweets.
+        </div>
+
+        <div class="menu-item">
+            <strong>Chocolate Lava Cake</strong><br>
+            Warm molten centre with vanilla bean ice cream.
+        </div>
+
+        <div class="menu-item">
+            <strong>Lemon Tart</strong><br>
+            Zesty and smooth, served with fresh cream.
+        </div>
+    </div>
+
 </div>
 
 <footer>
-    © 2026 Kingston House Impressions
+    <p>© 2026 Kingston House Impressions</p>
 </footer>
 
 </body>
