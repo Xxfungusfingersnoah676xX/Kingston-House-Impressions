@@ -6,12 +6,103 @@
     <title>Contact - Kingston House Impressions</title>
 
     <style>
-        body { margin: 0; font-family: Arial; background: #f7f7f7; }
-        header, footer { background: #2b2b2b; color: white; text-align: center; padding: 20px; }
-        nav { background: #444; padding: 12px; text-align: center; }
-        nav a { color: white; margin: 0 20px; text-decoration: none; font-weight: 600; }
-        nav a:hover { color: #ffcc33; }
-        .content { max-width: 900px; margin: 40px auto; background: white; padding: 25px; border-radius: 10px; }
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background: #faf7f2;
+            color: #333;
+        }
+
+        header {
+            background: #3a3a3a;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        nav {
+            background: #5a5a5a;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        nav a:hover {
+            color: #e6c27a;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 15px;
+            color: #5a4a2e;
+            border-bottom: 2px solid #d4a74e;
+            padding-bottom: 5px;
+        }
+
+        .info-box {
+            background: #fff3d6;
+            padding: 20px;
+            border-left: 5px solid #d4a74e;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 15px;
+            color: #5a4a2e;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #d4a74e;
+            border-radius: 6px;
+            background: #faf7f2;
+            font-family: 'Georgia', serif;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #d4a74e;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #3a3a3a;
+        }
+
+        button:hover {
+            background: #e6c27a;
+        }
+
+        footer {
+            background: #3a3a3a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
     </style>
 </head>
 
@@ -19,6 +110,7 @@
 
 <header>
     <h1>Contact Us</h1>
+    <p>We’d Love to Hear From You</p>
 </header>
 
 <nav>
@@ -30,14 +122,38 @@
 </nav>
 
 <div class="content">
-    <h2>Get in Touch</h2>
-    <p>Email: info@kingstonhouse.com</p>
-    <p>Phone: (07) 1234 5678</p>
-    <p>Address: Kingston House, QLD</p>
+
+    <h2 class="section-title">Contact Information</h2>
+
+    <div class="info-box">
+        <p><strong>Phone:</strong> (07) 1234 5678</p>
+        <p><strong>Email:</strong> info@kingstonhouse.com.au</p>
+        <p><strong>Address:</strong> Kingston House, Gympie QLD</p>
+        <p><strong>Hours:</strong><br>
+           Wed–Sat: 5:30pm – Late<br>
+           Sunday Lunch: 11:30am – 2:30pm
+        </p>
+    </div>
+
+    <h2 class="section-title">Send Us a Message</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Your full name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Your email address">
+
+        <label>Message</label>
+        <textarea rows="6" placeholder="How can we help you?"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+
 </div>
 
 <footer>
-    © 2026 Kingston House Impressions
+    <p>© 2026 Kingston House Impressions</p>
 </footer>
 
 </body>
